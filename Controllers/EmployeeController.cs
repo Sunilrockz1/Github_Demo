@@ -14,12 +14,12 @@ namespace Abfirstapplicationapi.Controllers
         {
             _context = context;
         }
-        [HttpGet("Country")]
-        public IActionResult GetCountry()
-        {
-            var count = _context.countries.ToList();
-            return Ok(count);
-        }
+        //[HttpGet("Country")]
+        //public IActionResult GetCountry()
+        //{
+        //    var count = _context.countries.ToList();
+        //    return Ok(count);
+        //}
         [HttpGet("states/{cid}")]
         public IActionResult Getstates(int cid)
         {
